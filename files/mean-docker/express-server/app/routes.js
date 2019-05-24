@@ -27,7 +27,7 @@ module.exports = function (app) {
         // create a account, information comes from AJAX request from Angular
         Account.create({
             name: req.body.name,
-            balance: '0',
+            balance: 0,
             done: false
         }, function (err, account) {
             if (err)
